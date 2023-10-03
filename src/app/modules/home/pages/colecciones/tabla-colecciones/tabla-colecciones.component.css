@@ -1,0 +1,28 @@
+.example-viewport {
+    margin-top: 10px !important;
+    height: calc(100vh - 335px);
+}
+
+.mat-table{
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+.botonLogin{
+    margin: 10px 0 0 0;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.fontSpinner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

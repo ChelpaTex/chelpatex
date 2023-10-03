@@ -1,0 +1,75 @@
+.btnNuevoColec{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+
+.modalStyle{
+    place-content: end;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 0 5rem 0 5rem;
+}
+
+.example-viewport {
+    margin-top: 10px !important;
+    height: calc(100vh - 169px);
+}
+
+.allCard{
+    border: 1px solid #000000 !important;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.inicial{
+    border: 1px solid;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 100px;
+    width: 100px;
+}
+
+.iniciales{
+    height: 93px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    
+}
+
+.inicialesConten{
+    border-radius: 100%;
+}
+
+.inciales{
+    position: relative;
+    top: 30px;
+    border-radius: 100%;
+    width: 4rem;
+    background-color: #000000;
+}
+
+.title{
+    font-size: 21px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.detailColec{
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.detailColecBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

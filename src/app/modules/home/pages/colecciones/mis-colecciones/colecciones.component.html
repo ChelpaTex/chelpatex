@@ -1,0 +1,40 @@
+<!-- <mat-spinner *ngIf="spinner" style="top: 250px;right: 0;left: 750px; bottom: 0;"></mat-spinner> -->
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between">
+        <div class="p" style="color: #A6A6A6;">Colecciones actuales</div>
+        <div class="p">
+            <button class="btnNuevoColec" mat-button (click)="nuevaColeccion()">Nueva Coleccion</button>
+        </div>
+    </div>
+    <div *ngIf="spinner" class="spinner-border text-dark" role="status"></div>
+    <div *ngIf="!spinner" class="row">
+            <cdk-virtual-scroll-viewport appendOnly itemSize="50" class="example-viewport">
+                <div *cdkVirtualFor="let item of items" class="d-flex flex-lg-row mb-3 allCard">
+                    <div class="p">
+                        <div class="d-flex flex-column inicial" [ngStyle]="{'background-color': item.color}">
+                            <div class="p-2 bd-highlight iniciales">
+                                {{item.iniciales}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p ms-3 d-flex flex-column">
+                        <div class="p title">{{item.nombre}}</div>
+                        <div class="p" style="color:#4D4D4D;font-size: 16px;">{{item.numeroDisenos}} diseños</div>
+                        <div class="p" style="color:#4D4D4D;font-size: 13px;">Creado el {{item.fechaCreacion | date:'dd/MM/yyyy'}}</div>
+                        <div class="p mt-3" style="color:#91D3FF;cursor: pointer;">
+                            <u (click)="eliminarColeccion(item.idColeccion)">
+                                Eliminar esta colección
+                            </u></div>
+                    </div>
+                    <div class="p ms-auto detailColecBtn">
+                        <span>
+                            <img (click)="seleccColeccion(item)" style="height:36px;cursor: pointer;" src="../../../../../../assets/icons/detailColecIcon.png">
+                        </span> 
+                    </div>
+                </div>
+            </cdk-virtual-scroll-viewport>
+        
+    </div>
+
+</div>
